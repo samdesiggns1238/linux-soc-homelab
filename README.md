@@ -1,7 +1,7 @@
 # Linux SOC Home Lab
 
 ## Overview
-Personal cybersecurity home lab built to develop hands-on skills for a SOC Analyst role. 
+Personal cybersecurity home lab built to develop hands-on skills for a SOC Analyst role.
 Environment runs on VirtualBox with Ubuntu 24.04 LTS.
 
 ## Lab Environment
@@ -21,7 +21,17 @@ Environment runs on VirtualBox with Ubuntu 24.04 LTS.
 - Linux filesystem navigation
 - User and permission analysis
 - Log reading and interpretation
-- Process monitoring
+- Process monitoring and analysis
+- System log investigation (syslog, dpkg.log, auth.log)
+- Command chaining with pipe operator
+- Filtering and searching logs with grep
+
+## Investigations Completed
+| Investigation | File/Area | Key Finding |
+|---------------|-----------|-------------|
+| /etc filesystem analysis | /etc/passwd, /etc/shadow, /etc/hosts | Identified system users and DNS mapping |
+| Auth log grep analysis | /var/log/auth.log | Analyzed sudo usage and baseline CRON activity |
+| Process analysis | ps aux output | Identified normal vs suspicious process indicators |
 
 ## Certifications in Progress
 - Linux Essentials (Cisco NDG)
